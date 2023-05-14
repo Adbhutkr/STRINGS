@@ -1,0 +1,20 @@
+Given the number 'n', find out and return the number of digits present in a number .
+Input Format :
+Integer n
+Output Format :
+Count of digits
+
+public class Solution 
+{
+
+	public static int count(int n)
+	{
+		if(n == 0)
+		return 0;
+		else
+		{
+			return(1+count(n/10));
+		}
+	}
+	
+}
